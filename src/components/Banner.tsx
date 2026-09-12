@@ -25,12 +25,13 @@ const Banner = () => {
                 <div className="flex gap-3 mt-6">
 
                     <button className="
-                        bg-[linear-gradient(90deg,#FF5722_0%,#D81B7E_50%,#7C3AED_100%)]
-                        text-white
-                        px-5
-                        py-3
-                        rounded-lg
-                        font-semibold
+                    bg-[linear-gradient(90deg,#FF5722_0%,#D81B7E_50%,#7C3AED_100%)]
+                    hover:bg-[linear-gradient(90deg,#FF7043_0%,#E24791_50%,#8B5CF6_100%)]
+                    text-white
+                    px-5
+                    py-3
+                    rounded-lg
+                    font-semibol
                     ">
                         Explore Technologies
                     </button>
@@ -42,6 +43,7 @@ const Banner = () => {
                         px-5
                         py-3
                         rounded-lg
+                        hover:text-[#db2777]
                     ">
                         Learn More
                     </button>

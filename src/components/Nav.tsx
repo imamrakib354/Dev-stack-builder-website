@@ -22,7 +22,7 @@ const Nav = () => {
                     </li>
 
                     <li className="hover:text-[#db2777]">
-                        <button className="btn btn-secondary rounded-full hover:text-gray-700">
+                        <button className="btn btn-secondary rounded-full hover:text-gray-700 hover:bg-[#d63c7f]">
                             Sign Up
                         </button>
                     </li>
