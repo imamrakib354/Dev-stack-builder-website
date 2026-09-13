@@ -1,18 +1,62 @@
-import Banner from "./components/Banner"
-import Footer from "./components/Footer"
-import Nav from "./components/Nav"
+import Banner from "./components/Banner";
+import Footer from "./components/Footer";
+import Nav from "./components/Nav";
+import Technologies from "./components/Technologies";
+import type { TechnologyType } from "./Technology";
+import { Suspense } from "react";
+import { ToastContainer } from "react-toastify";
 
+const technologiesPromies = async (): Promise<TechnologyType[]> => {
+    const res = await fetch(
+        "https://my-json-server.typicode.com/imamrakib354/dev-stack-data/technologies"
+    );
+
+    const data: TechnologyType[] = await res.json();
+
+    return data;
+};
 
 function App() {
+    return (
+        <>
+            <Nav />
+            <Banner />
 
-  return (
-    <>
-    <Nav></Nav>
-    <Banner></Banner>
-    <Footer></Footer>
-      
-    </>
-  )
+            <div className="container mx-auto px-6 pt-16">
+                <h1 className="inter text-[36px] font-extrabold">
+                    Explore{" "}
+                    <strong className="bg-[linear-gradient(90deg,#EC4899_0%,#8B5CF6_100%)] bg-clip-text text-transparent">
+                        Technologies
+                    </strong>
+                </h1>
+
+                <p>
+                    Pick one technology category to build your ideal stack
+                </p>
+            </div>
+
+            <Suspense
+                fallback={
+                    <div className="container mx-auto px-6">
+                        <p className="text-gray-400 text-lg">
+                            Technologies Stack Loading...
+                        </p>
+                    </div>
+                }
+            >
+                <Technologies
+                    technologiesPromies={technologiesPromies()}
+                />
+            </Suspense>
+
+            <Footer />
+
+            <ToastContainer
+                position="bottom-right"
+                autoClose={3000}
+            />
+        </>
+    );
 }
 
-export default App
+export default App;
