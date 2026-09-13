@@ -196,6 +196,46 @@ Runs the production build locally for preview.
 
 ---
 
+## ⚛️ Short answers of react questions
+
+### 1. What is JSX, and why is it used in React?
+
+JSX is basically a syntax extension for JavaScript .It is a syntax that allows us to write HTML-like markup inside JavaScript or TypeScript. It makes it easier to describe the UI in React.
+
+### 2. What is the difference between props and state?
+
+Props are data passed from a parent component to a child component, and they are received as a props object. State is data managed inside a component that can change over time. When state changes, React re-renders the component and updates the UI. 
+
+### 3. What does the `useState` hook do, and where did you use it in this project?
+
+`useState` allows a functional component to store and manage data that can change over time. I used it in `Technologies.tsx` to store the technologies selected by the user. When a user selects a technology, it is added to the stack, and when the user removes it, it is removed from the stack and the UI is updated.
+
+### 4. What does the `useEffect` hook do, and why did you need it to load the JSON data?
+
+`useEffect` is used to handle side effects in a React component, such as fetching or loading data.  I did not use `useEffect` for loading the JSON data in this project. Instead, I used a Promise with React `Suspense` and the `use()` hook.
+
+### 5. Why does every item in a `.map()` list need a unique `key` prop?
+
+The `key` prop helps React uniquely identify each item in a list. It allows React to efficiently track which items are added, removed, or changed and update only the necessary parts of the UI. 
+
+### 6. What is conditional rendering?
+
+Conditional rendering means displaying different UI depending on a condition. I used it in `Stack.tsx` to show an empty-stack message when no technologies are selected.
+
+```tsx
+{selectedTechnologies.length === 0 ? (
+    <p>Your stack is empty.</p>
+) : (
+    <div>...</div>
+)}
+```
+
+### 7. How do you pass data from a parent component to a child component, and how does a child send something back to the parent?
+
+A parent passes data to a child through props. To send information back, the parent passes a function as a prop, and the child calls that function with the required data. In my project, `Technologies.tsx` passes technology data and handler functions to the `Technology` and `Stack` components.
+
+---
+
 ## 🔗 Relevant Links
 
 - 🌐 **Live Website:** [Dev Stack Builder](https://dev-stack-builder-website-phi.vercel.app/)
