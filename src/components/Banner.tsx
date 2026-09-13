@@ -2,7 +2,7 @@ import banner from '../assets/banner-stack.png';
 
 const Banner = () => {
     return (
-        <section className="container mx-auto px-6 flex flex-col lg:flex-row justify-between items-center py-8 lg:py-3">
+        <section className="container mx-auto px-6 flex flex-col lg:flex-row justify-between items-center py-8 lg:py-2">
 
             <div className="text-center lg:text-left">
 
@@ -11,7 +11,7 @@ const Banner = () => {
                         Build Your Ideal
                     </span>
 
-                    <span className="block bg-[linear-gradient(90deg,#FF5722_0%,#D81B7E_50%,#7C3AED_100%)] bg-clip-text text-transparent">
+                    <span className="block bg-[linear-gradient(90deg,#FF5722_0%,#D81B7E_50%,#7C3AED_100%)] bg-clip-text text-transparent leading-[1.30]">
                         Development Stack
                     </span>
                 </h1>
