@@ -50,9 +50,9 @@ const Technologies = ({ technologiesPromies }: TechnologiesProps) => {
     return (
         <div className="container mx-auto px-6 py-16">
 
-            <div className="grid grid-cols-4 gap-6 mt-10">
+            <div className="grid grid-cols-1 lg:grid-cols-4 gap-6 mt-4 lg:mt-10">
 
-                <div className="grid col-span-3 grid-cols-3 gap-6">
+                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 lg:col-span-3">
 
                     {technologies.map(technology => (
                         <Technology
@@ -67,7 +67,7 @@ const Technologies = ({ technologiesPromies }: TechnologiesProps) => {
 
                 </div>
 
-                <div className="col-span-1">
+                <div className="lg:col-span-1">
 
                     <Stack
                         selectedTechnologies={selectedTechnologies}

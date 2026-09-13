@@ -22,12 +22,9 @@ function App() {
             <Nav />
             <Banner />
 
-            <div className="container mx-auto px-6 pt-16">
-                <h1 className="inter text-[36px] font-extrabold">
-                    Explore{" "}
-                    <strong className="bg-[linear-gradient(90deg,#EC4899_0%,#8B5CF6_100%)] bg-clip-text text-transparent">
-                        Technologies
-                    </strong>
+            <div className="container mx-auto px-6 pt-4">
+                <h1 className="inter text-[28px] font-extrabold">
+                    Explore <span className="bg-[linear-gradient(90deg,#EC4899_0%,#8B5CF6_100%)] bg-clip-text text-transparent">Technologies</span>
                 </h1>
 
                 <p>
@@ -38,7 +35,7 @@ function App() {
             <Suspense
                 fallback={
                     <div className="container mx-auto px-6">
-                        <p className="text-gray-400 text-lg">
+                        <p className="text-gray-400 text-lg text-center">
                             Technologies Stack Loading...
                         </p>
                     </div>

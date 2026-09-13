@@ -27,7 +27,7 @@ const Footer = () => {
 
                 </div>
 
-                <div>
+                <div className='hidden lg:block'>
                     <h3 className="font-bold mb-4">
                         PRODUCT
                     </h3>
@@ -39,7 +39,7 @@ const Footer = () => {
                     </ul>
                 </div>
 
-                <div>
+                <div className='hidden lg:block'>
                     <h3 className="font-bold mb-4">
                         COMPANY
                     </h3>
@@ -51,7 +51,7 @@ const Footer = () => {
                     </ul>
                 </div>
 
-                <div>
+                <div className='hidden lg:block'>
                     <h3 className="font-bold mb-4">
                         LEGAL
                     </h3>
@@ -66,11 +66,11 @@ const Footer = () => {
 
             <div className="border-t border-gray-200 mt-12 pt-6 flex justify-between">
 
-                <p className="text-gray-400">
+                <p className="text-gray-400 text-[14px] lg:text-[16px]">
                     © 2026 Dev Stack. All rights reserved.
                 </p>
 
-                <div className="flex gap-6 text-gray-400">
+                <div className="flex gap-6 text-gray-400 text-[14px] lg:text-[16px]">
                     <p>Privacy</p>
                     <p>Terms</p>
                 </div>
