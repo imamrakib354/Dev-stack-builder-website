@@ -2,7 +2,7 @@ import banner from '../assets/banner-stack.png';
 
 const Banner = () => {
     return (
-        <section className="container mx-auto px-6 flex flex-col lg:flex-row justify-between items-center py-8 lg:py-4">
+        <section className="container mx-auto px-6 flex flex-col lg:flex-row justify-between items-center py-8 lg:py-3">
 
             <div className="text-center lg:text-left">
 
