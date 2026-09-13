@@ -45,7 +45,7 @@ const Nav = () => {
                         </li>
 
                         <li>
-                            <button className="btn btn-secondary rounded-full hover:bg-[#d63c7f] hover:text-gray-700">
+                            <button className="btn btn-secondary rounded-full transition-all duration-300 hover:-translate-y-1 hover:bg-[#d63c7f] hover:text-gray-700 hover:shadow-lg">
                                 Sign Up
                             </button>
                         </li>

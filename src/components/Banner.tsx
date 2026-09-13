@@ -26,12 +26,16 @@ const Banner = () => {
 
                     <button className="
                     bg-[linear-gradient(90deg,#FF5722_0%,#D81B7E_50%,#7C3AED_100%)]
-                    hover:bg-[linear-gradient(90deg,#FF7043_0%,#E24791_50%,#8B5CF6_100%)]
+                    hover:bg-[linear-gradient(90deg,#E64A19_0%,#C2185B_50%,#6D28D9_100%)]
                     text-white
                     px-5
                     py-3
                     rounded-lg
                     font-semibol
+                    transition-all
+                    duration-300
+                    hover:-translate-y-1
+                    hover:shadow-lg
                     ">
                         Explore Technologies
                     </button>
@@ -44,6 +48,10 @@ const Banner = () => {
                         py-3
                         rounded-lg
                         hover:text-[#db2777]
+                        transition-all
+                        duration-300
+                        hover:-translate-y-1
+                        hover:shadow-lg
                     ">
                         Learn More
                     </button>
