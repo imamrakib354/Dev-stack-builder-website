@@ -8,7 +8,7 @@ export interface TechnologyProps {
 
 const Technology = ({ technology, onAdd, isAdded }: TechnologyProps) => {
     return (
-        <div className="border border-gray-200 rounded-3xl p-8">
+        <div className="border border-gray-200 rounded-3xl p-8 transition-all duration-300 hover:-translate-y-2 hover:shadow-lg">
 
             <div className="flex justify-between items-start">
                 <img
